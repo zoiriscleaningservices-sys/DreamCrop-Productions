@@ -26,8 +26,6 @@ const locations = [
   { name: "North Miami", region: "Miami-Dade County", lat: 25.8901, lng: -80.1867, zip: "33161" },
   { name: "Opa-locka", region: "Miami-Dade County", lat: 25.9023, lng: -80.2503, zip: "33054" },
   { name: "Miami Springs", region: "Miami-Dade County", lat: 25.8223, lng: -80.2831, zip: "33166" },
-  
-  // Broward County (25 targets)
   { name: "Fort Lauderdale", region: "Broward County", lat: 26.1224, lng: -80.1373, zip: "33301" },
   { name: "Hollywood", region: "Broward County", lat: 26.0112, lng: -80.1495, zip: "33020" },
   { name: "Pompano Beach", region: "Broward County", lat: 26.2379, lng: -80.1248, zip: "33060" },
@@ -53,8 +51,6 @@ const locations = [
   { name: "Sea Ranch Lakes", region: "Broward County", lat: 26.2006, lng: -80.0984, zip: "33308" },
   { name: "Southwest Ranches", region: "Broward County", lat: 26.0270, lng: -80.3423, zip: "33330" },
   { name: "Las Olas", region: "Broward County", lat: 26.1192, lng: -80.1332, zip: "33301" },
-
-  // Palm Beach County (25 targets)
   { name: "Boca Raton", region: "Palm Beach County", lat: 26.3683, lng: -80.1289, zip: "33432" },
   { name: "Delray Beach", region: "Palm Beach County", lat: 26.4615, lng: -80.0728, zip: "33444" },
   { name: "West Palm Beach", region: "Palm Beach County", lat: 26.7153, lng: -80.0534, zip: "33401" },
@@ -80,22 +76,62 @@ const locations = [
   { name: "Jupiter Island", region: "Martin County", lat: 27.0542, lng: -80.1062, zip: "33455" },
   { name: "Hobe Sound", region: "Martin County", lat: 27.0595, lng: -80.1364, zip: "33455" },
   { name: "Stuart", region: "Martin County", lat: 27.1975, lng: -80.2528, zip: "34994" }
-]; // Total 75 spatial targets
-
-const modifiers = ["Premium", "Cinematic", "High-End", "Professional", "Award-Winning", "Elite", "Luxury", "Dynamic"];
-const coreServices = [
-  "Video Production", "Commercial Video", "Video Agency", "Corporate Video", "Music Video Production", 
-  "Real Estate Video", "Drone Videography", "Video Post-Production", "VFX Editing", "Event Coverage"
 ];
 
-// Combine Modifiers with Core Services (8 * 10 = 80 distinct keywords)
-const services = [];
-for (const mod of modifiers) {
-    for (const core of coreServices) {
-        services.push(`${mod} ${core}`);
-    }
-}
-// Total 80 robust service targets
+const modifiers = ["Premium", "Cinematic", "High-End", "Professional", "Award-Winning", "Elite", "Luxury", "Dynamic"];
+
+const coreServices = [
+  { 
+    name: "Video Production", 
+    h1: "BEYOND REALITY.\\nULTIMATE PRODUCTION.", 
+    desc: "{{CITY}}'s premier {{SERVICE_LOWER}}. We engineer explosive visual campaigns, cinematic brand promos, and relentless storytelling that commands absolute authority." 
+  },
+  { 
+    name: "Commercial Video", 
+    h1: "EXPLOSIVE ADS.\\nUNMATCHED CINEMA.", 
+    desc: "Dominate the market with high-impact {{SERVICE_LOWER}} in {{CITY}}. We construct aggressive, ultra-premium commercial advertising that radically scales your business." 
+  },
+  { 
+    name: "Video Agency", 
+    h1: "VISIONARY MEDIA.\\nELITE EXECUTION.", 
+    desc: "As {{CITY}}'s top-rated {{SERVICE_LOWER}}, we offer end-to-end creative direction. From concept to 8K final cut, trust the agency that redefines modern luxury." 
+  },
+  { 
+    name: "Corporate Video", 
+    h1: "ELEVATE YOUR\\nBRAND AUTHORITY.", 
+    desc: "We deliver elite {{SERVICE_LOWER}} for enterprise organizations in {{REGION}}. Build unwavering trust, train global teams, and dominate your industry visually." 
+  },
+  { 
+    name: "Music Video Production", 
+    h1: "VISUALIZE YOUR\\nSONIC MASTERPIECE.", 
+    desc: "Elevating {{CITY}} artists with mind-bending {{SERVICE_LOWER}}. Break through the noise with explosive visual storytelling and industry-leading choreography framing." 
+  },
+  { 
+    name: "Real Estate Video", 
+    h1: "LUXURY PROPERTY\\nCINEMATOGRAPHY.", 
+    desc: "Capture the true value of {{REGION}}'s finest properties. We engineer ultra-premium luxury {{SERVICE_LOWER}} that accelerates high-ticket sales instantly." 
+  },
+  { 
+    name: "Drone Videography", 
+    h1: "AERIAL MASTERY.\\n8K HORIZONS.", 
+    desc: "Unlock breathtaking perspectives with licensed {{SERVICE_LOWER}} in {{CITY}}. We fly heavy-lift cinema drones to capture dynamic, sweeping shots for scale and impact." 
+  },
+  { 
+    name: "Video Post-Production", 
+    h1: "MIND BENDING\\nPOST PRODUCTION.", 
+    desc: "We don't just edit; we orchestrate high-end cinematic experiences. Trust {{CITY}}'s finest {{SERVICE_LOWER}} suite with aggressive 3D sound design and elite color grading." 
+  },
+  { 
+    name: "VFX Editing", 
+    h1: "NEXT GENERATION\\nVISUAL EFFECTS.", 
+    desc: "Transform raw footage into unforgettable visual gold. From absolute motion tracking to intense 3D composites, we are the bleeding edge of {{SERVICE_LOWER}} in {{REGION}}." 
+  },
+  { 
+    name: "Event Coverage", 
+    h1: "IMMORTALIZE THE\\nEXPERIENCE.", 
+    desc: "Relive every adrenaline-pumping moment. We provide raw, cinematic {{SERVICE_LOWER}} in {{CITY}}, capturing the true essence and scale of your massive events." 
+  }
+];
 
 // Seed Matrix Array
 const matrix = [];
@@ -107,22 +143,35 @@ function sluggify(text) {
 
 // Perform 75 x 80 Cartesian Mapping
 locations.forEach(loc => {
-    services.forEach(srv => {
-        matrix.push({
-            city: loc.name,
-            state: "FL",
-            region: loc.region,
-            latitude: loc.lat,
-            longitude: loc.lng,
-            zipcode: loc.zip,
-            service_caps: srv,
-            service_lower: srv.toLowerCase(),
-            slug_city: sluggify(loc.name),
-            slug_service: sluggify(srv)
+    modifiers.forEach(mod => {
+        coreServices.forEach(core => {
+            const srv = `${mod} ${core.name}`;
+            const srvLower = srv.toLowerCase();
+            
+            // Contextually evaluate the strings natively
+            const replacedDesc = core.desc
+                  .replace(/\{\{CITY\}\}/g, loc.name)
+                  .replace(/\{\{REGION\}\}/g, loc.region)
+                  .replace(/\{\{SERVICE_LOWER\}\}/g, srvLower);
+                  
+            matrix.push({
+                city: loc.name,
+                state: "FL",
+                region: loc.region,
+                latitude: loc.lat,
+                longitude: loc.lng,
+                zipcode: loc.zip,
+                service_caps: srv,
+                service_lower: srvLower,
+                niche_h1: core.h1,
+                niche_desc: replacedDesc,
+                slug_city: sluggify(loc.name),
+                slug_service: sluggify(srv)
+            });
         });
     });
 });
 
 fs.writeFileSync('locations.json', JSON.stringify(matrix, null, 2));
 
-console.log(`[SEEDER] Successfully generated ${locations.length} Locations x ${services.length} Services = ${matrix.length} Target Pages.`);
+console.log(`[SEEDER] 75 Locations x 80 Services mapped with Core NLP targeting.`);
