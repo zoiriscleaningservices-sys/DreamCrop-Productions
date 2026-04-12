@@ -1,0 +1,50 @@
+[
+  {
+    "city": "Miami",
+    "state": "FL",
+    "region": "South Florida",
+    "latitude": 25.761680,
+    "longitude": -80.191790,
+    "zipcode": "33131",
+    "service_caps": "Video Production Agency",
+    "service_lower": "video production agency",
+    "slug_city": "miami",
+    "slug_service": "video-production-agency"
+  },
+  {
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "region": "South Florida",
+    "latitude": 26.122438,
+    "longitude": -80.137314,
+    "zipcode": "33301",
+    "service_caps": "Commercial Video Production",
+    "service_lower": "commercial video production",
+    "slug_city": "fort-lauderdale",
+    "slug_service": "commercial-video-production"
+  },
+  {
+    "city": "West Palm Beach",
+    "state": "FL",
+    "region": "South Florida",
+    "latitude": 26.715342,
+    "longitude": -80.053375,
+    "zipcode": "33401",
+    "service_caps": "Cinematic Video Editing",
+    "service_lower": "cinematic video editing",
+    "slug_city": "west-palm-beach",
+    "slug_service": "cinematic-video-editing"
+  },
+  {
+    "city": "Boca Raton",
+    "state": "FL",
+    "region": "South Florida",
+    "latitude": 26.368306,
+    "longitude": -80.128932,
+    "zipcode": "33432",
+    "service_caps": "Corporate Video Production",
+    "service_lower": "corporate video production",
+    "slug_city": "boca-raton",
+    "slug_service": "corporate-video-production"
+  }
+]
