@@ -55,7 +55,7 @@ locationsDB.forEach(loc => {
     console.log(`[GENERATED]: /${loc.slug_city}/${loc.slug_service}/`);
     
     // Append to sitemap
-    sitemapXML += `  <url>\n    <loc>${DOMAIN}/${loc.slug_city}/${loc.slug_service}/</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+    sitemapXML += `  <url>\n    <loc>${DOMAIN}/${loc.slug_city}/${loc.slug_service}/</loc>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
 });
 
 sitemapXML += `</urlset>`;
