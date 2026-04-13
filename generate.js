@@ -23,6 +23,13 @@ fs.cpSync(srcAssets, distAssets, { recursive: true });
 // Copy the original index.html over as the root page so the base website still works!
 fs.copyFileSync(path.join(__dirname, 'index.html'), path.join(distPath, 'index.html'));
 
+if (fs.existsSync(path.join(__dirname, 'CNAME'))) {
+    fs.copyFileSync(path.join(__dirname, 'CNAME'), path.join(distPath, 'CNAME'));
+}
+if (fs.existsSync(path.join(__dirname, 'robots.txt'))) {
+    fs.copyFileSync(path.join(__dirname, 'robots.txt'), path.join(distPath, 'robots.txt'));
+}
+
 let sitemapXML = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
 sitemapXML += `  <url>\n    <loc>https://dreamcropproductions.com/</loc>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
 
