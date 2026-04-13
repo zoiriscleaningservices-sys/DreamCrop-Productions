@@ -481,6 +481,11 @@
             gap: 5px;
         }
 
+        .mobile-break {
+            width: 0.3em;
+        }
+
+
         .reveal-char {
             font-family: var(--font-heading);
             font-size: 1em; /* Inherit size from parent */
@@ -992,6 +997,11 @@
             .hero-content h1 {
                 font-size: clamp(18px, 6vw, 90px);
             }
+            .mobile-break {
+                flex-basis: 100% !important;
+                height: 0 !important;
+                width: 0 !important;
+            }
             .giant-text {
                 font-size: clamp(20px, 11vw, 250px);
             }
@@ -1356,45 +1366,74 @@
             const container = document.getElementById(containerId);
             if (!container) return;
 
-            textToReveal.split('').forEach((char, index) => {
-                if (char === '\n') {
+            // Replace pipe | with a space that breaks on mobile
+            // First we do standard new lines
+            let charIndex = 0;
+            const lines = textToReveal.split('\n');
+
+            lines.forEach((line, lineIndex) => {
+                // Split by spaces to form words so they don't break mid-letter!
+                const words = line.split(' ');
+
+                words.forEach((word, wordIndex) => {
+                    const wordContainer = document.createElement('div');
+                    wordContainer.style.display = 'flex';
+                    wordContainer.classList.add('reveal-word');
+
+                    word.split('').forEach(char => {
+                        if (char === '|') {
+                            const br = document.createElement('div');
+                            br.classList.add('mobile-break');
+                            container.appendChild(wordContainer); // End current word
+                            container.appendChild(br);
+                            return; // Skip normal char rendering
+                        }
+
+                        const charDiv = document.createElement('div');
+                        charDiv.classList.add('reveal-char');
+                        charDiv.setAttribute('data-aos', 'zoom-in-up');
+                        charDiv.setAttribute('data-aos-delay', ((charIndex % 15) * 50).toString());
+
+                        const baseSpan = document.createElement('span');
+                        baseSpan.classList.add('reveal-char-base');
+                        baseSpan.innerText = char;
+
+                        const imgSpan = document.createElement('span');
+                        imgSpan.classList.add('reveal-char-img');
+                        imgSpan.innerText = char;
+                        imgSpan.style.backgroundImage = `url('${images[charIndex % images.length]}')`;
+
+                        charDiv.appendChild(baseSpan);
+                        charDiv.appendChild(imgSpan);
+                        wordContainer.appendChild(charDiv);
+
+                        charIndex++;
+                    });
+
+                    // Append the word container safely
+                    if (wordContainer.childNodes.length > 0) {
+                        container.appendChild(wordContainer);
+                    }
+
+                    if (wordIndex < words.length - 1) {
+                        const space = document.createElement('div');
+                        space.style.width = '0.3em';
+                        container.appendChild(space);
+                    }
+                });
+
+                if (lineIndex < lines.length - 1) {
                     const br = document.createElement('div');
-                    br.style.flexBasis = '100%'; // Force a line break in flexbox
+                    br.style.flexBasis = '100%';
                     br.style.height = '0';
                     container.appendChild(br);
-                    return;
                 }
-                if (char === ' ') {
-                    const space = document.createElement('div');
-                    space.style.width = '0.3em'; // Em space perfectly scales with the parent font size!
-                    container.appendChild(space);
-                    return;
-                }
-                
-                const charDiv = document.createElement('div');
-                charDiv.classList.add('reveal-char');
-                // Stagger the AOS jump-in animation slightly for each letter
-                charDiv.setAttribute('data-aos', 'zoom-in-up');
-                charDiv.setAttribute('data-aos-delay', ((index % 15) * 50).toString());
-
-                const baseSpan = document.createElement('span');
-                baseSpan.classList.add('reveal-char-base');
-                baseSpan.innerText = char;
-
-                const imgSpan = document.createElement('span');
-                imgSpan.classList.add('reveal-char-img');
-                imgSpan.innerText = char;
-                imgSpan.style.backgroundImage = `url('${images[index % images.length]}')`;
-
-                charDiv.appendChild(baseSpan);
-                charDiv.appendChild(imgSpan);
-                container.appendChild(charDiv);
             });
         }
 
         // Apply dynamic image hover effects to both the massive button and the main hero!
         createRevealText('revealTextContainer', 'BOOK NOW');
-        createRevealText('heroTextContainer', 'INSANE VISUALS.\nTOP TIER PRODUCTION.');
+        createRevealText('heroTextContainer', 'INSANE|VISUALS.\nTOP TIER|PRODUCTION.');
 
         // ==========================================
         // Auto sweeping animation wave
