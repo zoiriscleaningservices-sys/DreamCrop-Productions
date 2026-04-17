@@ -58,7 +58,8 @@ locationsDB.forEach(loc => {
         .replace(/\{\{SERVICE_LOWER\}\}/g, loc.service_lower)
         .replace(/\{\{BASE_URL\}\}/g, baseURL)
         .replace(/\{\{NICHE_H1\}\}/g, loc.niche_h1)
-        .replace(/\{\{NICHE_DESC\}\}/g, loc.niche_desc);
+        .replace(/\{\{NICHE_DESC\}\}/g, loc.niche_desc)
+        .replace(/\{\{CANONICAL_URL\}\}/g, `${DOMAIN}/${loc.slug_city}/${loc.slug_service}/`);
         
     // Write the output file
     fs.writeFileSync(path.join(routeDir, 'index.html'), outputHTML);
