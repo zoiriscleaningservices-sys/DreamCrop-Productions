@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamCrop Productions | Premier Cinematic Event Coverage in Aventura, FL</title>
+    <meta name="description" content="DreamCrop Productions is Aventura's top-rated cinematic event coverage. We specialize in high-end cinematic commercials, corporate videos, event videography, and cutting-edge post-production. Elevate your brand in Miami-Dade County. Book a shoot today!">
+    <meta name="keywords" content="Aventura cinematic event coverage, video agency Aventura, commercial videographer Aventura, high-end production company FL, cinematic video editing Aventura, corporate video production Aventura, DreamCrop Productions, hire videographer in Aventura">
+
+    <!-- Canonical URL for SEO Indexing -->
+    <link rel="canonical" href="https://www.dreamcropproductions.com/aventura/cinematic-event-coverage/" />
+    <!-- Global Sitemap Reference -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.dreamcropproductions.com/sitemap.xml" />
+
+    <!-- Local SEO Geo-Tags -->
+    <meta name="geo.region" content="US-FL" />
+    <meta name="geo.placename" content="Aventura" />
+    <meta name="geo.position" content="25.9565;-80.1392" />
+    <meta name="ICBM" content="25.9565, -80.1392" />
+
+    <!-- Dominant JSON-LD Structured Data for Local Ranking & Review Stars -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "DreamCrop Productions",
+      "image": "https://www.dreamcropproductions.com/assets/images/logo.png",
+      "@id": "https://www.dreamcropproductions.com",
+      "url": "https://www.dreamcropproductions.com",
+      "telephone": "+17864476252",
+      "email": "Info@dreamcropproductions.com",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Downtown Aventura",
+        "addressLocality": "Aventura",
+        "addressRegion": "FL",
+        "postalCode": "33180",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.9565,
+        "longitude": -80.1392
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/dreamcropproductions?igsh=MWl6dHRwemN1N29reA%3D%3D&utm_source=qr",
+        "https://www.facebook.com/profile.php?id=61574268835702",
+        "https://youtube.com/@dreamcropproductions4517?si=wsiaHbnaygJ_puqG"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "142"
+      },
+      "description": "Aventura's premier cinematic event coverage specializing in cinematic commercials, corporate videos, and high-end editing services."
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind CSS (No Preflight) for Uiverse Components -->
+    <script>
+        tailwind = {
+            config: {
+                corePlugins: {
+                    preflight: false,
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Preload Hero Video (Optional but good for fast rendering) -->
+    <link rel="preload" as="video" href="../../assets/images/hero_video.mp4">
+
+    <style>
+        /* BASE TOKENS */
+        :root {
+            --primary: #00f0ff;
+            --secondary: #b000ff;
+            --bg-dark: #050507;
+            --bg-surface: rgba(15, 15, 20, 0.6);
+            --text-light: #ffffff;
+            --text-muted: #d0d0d0;
+            --font-heading: 'Outfit', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --glass-border: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.4s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        .navbar.scrolled {
+            background: rgba(5, 5, 7, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 1rem 5%;
+        }
+
+        .logo {
+            position: absolute;
+            left: 5%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 130px; /* Huge base size */
+            width: auto;
+            display: block;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.9)); /* Contrast shadow */
+        }
+
+        .navbar.scrolled .logo img {
+            height: 85px; /* Stay huge even while scrolling */
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            margin: 0 auto;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-family: var(--font-heading);
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 0 5%;
+            overflow: hidden;
+        }
+
+        .hero-bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(176,0,255,0.1) 100%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            position: relative;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(24px, 9vw, 90px); /* Lower minimum bound to allow easy fitting on narrow screens */
+            font-family: var(--font-heading);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            row-gap: 10px;
+        }
+
+        /* We no longer need the hero inline span gradient since the whole hero will be image-hover masked! */
+
+        .hero-content p {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.95);
+            text-shadow: 0 4px 15px rgba(0,0,0,1);
+            margin-bottom: 2.5rem;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary), var(--secondary), #ff007f);
+            background-size: 200% 200%;
+            color: #fff;
+            border: none;
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+            animation: gradient-shift 4s ease infinite;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 40px rgba(176, 0, 255, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(5px);
+        }
+        
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #fff;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        /* Sections Global */
+        .section {
+            padding: 8rem 5%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-header h2 {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #fff, var(--text-muted));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .services-content h3 {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .services-content p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-list li i {
+            color: var(--secondary);
+            font-size: 1.5rem;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .image-card {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            border: 1px solid var(--glass-border);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .image-card:hover {
+            animation-play-state: paused;
+        }
+
+        .image-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 0 0 50px rgba(176, 0, 255, 0.2);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.7s ease;
+        }
+
+        .image-card:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Promo Section */
+        .promo-section {
+            background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(15, 15, 20, 1) 100%);
+            position: relative;
+        }
+
+        .promo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .glass-box {
+            background: var(--bg-surface);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .glass-box:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(176, 0, 255, 0.4);
+        }
+
+        .glass-box h3 {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .glass-box p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Portfolio Reveal Text (Native Vanilla) */
+        .reveal-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 50vh;
+            padding: 2rem 1rem;
+            background: rgba(0,0,0,0.4);
+            border-radius: 24px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 0 50px rgba(176, 0, 255, 0.1);
+            margin-bottom: 5rem;
+            transition: all 0.4s ease;
+            font-size: clamp(35px, 12vw, 200px); /* Massive font size for button on desktop, 35px min for mobile */
+        }
+        
+        .reveal-container:hover {
+            box-shadow: 0 0 70px rgba(0, 240, 255, 0.2);
+        }
+
+        .reveal-text {
+            display: flex;
+            gap: 5px;
+        }
+
+        .mobile-break {
+            width: 0.3em;
+        }
+
+        @media (max-width: 900px) {
+            .mobile-break {
+                flex-basis: 100%;
+                height: 0;
+            }
+        }
+
+
+        .reveal-char {
+            font-family: var(--font-heading);
+            font-size: 1em; /* Inherit size from parent */
+            font-weight: 900;
+            position: relative;
+            cursor: pointer;
+            line-height: 1;
+            transform: scaleX(1.15); /* Makes the letters appear thicker and wider */
+            margin: 0 2px;
+            letter-spacing: -0.05em;
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,1)) drop-shadow(0 5px 10px rgba(0,0,0,1)); /* Stacked ultra-dark solid black shadows */
+        }
+
+        .reveal-char-base {
+            color: #fff;
+            -webkit-text-stroke: 4px #fff; /* Artificially fattens the font */
+            transition: opacity 0.3s ease;
+        }
+
+        .reveal-char:hover .reveal-char-base,
+        .reveal-char.active .reveal-char-base {
+            opacity: 0;
+        }
+
+        .reveal-char-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-stroke: 4px transparent; /* Expose the fattened stroke to the image clip */
+            background-size: cover;
+            background-position: 0% center;
+            opacity: 0;
+            transition: opacity 0.3s ease, background-position 1s ease;
+        }
+
+        .reveal-char:hover .reveal-char-img,
+        .reveal-char.active .reveal-char-img {
+            opacity: 1;
+            background-position: 20% center;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            text-align: center;
+            padding: 6rem 5%;
+            background: linear-gradient(45deg, rgba(0, 240, 255, 0.1), rgba(176, 0, 255, 0.1));
+            border-top: 1px solid var(--glass-border);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .cta-section h2 {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 5%;
+            color: var(--text-muted);
+            border-top: 1px solid var(--glass-border);
+        }
+
+        /* Uiverse Social Login Icons */
+        .social-login-icons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 10px;
+          -webkit-box-reflect: below -25px linear-gradient(transparent, #00000099);
+        }
+        .social-login-icons svg {
+          width: 40px;
+        }
+        
+        .social-icon-1, .social-icon-1-1, .social-icon-2, .social-icon-2-2,
+        .social-icon-3, .social-icon-3-3, .social-icon-4, .social-icon-4-4 {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50px;
+          margin: 20px 0 0px 0;
+        }
+        
+        .icon svg {
+          fill: #fff;
+          filter: drop-shadow(0 2px 5px rgba(0,0,0,0.8));
+        }
+        
+        .socialcontainer {
+          height: 80px;
+          overflow: hidden;
+        }
+        
+        .social-icon-1 {
+          transition-duration: 0.4s;
+          background-color: rgb(0, 0, 0);
+          transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+        }
+        
+        .social-icon-1 svg, .social-icon-2 svg, .social-icon-3 svg, .social-icon-4 svg {
+          opacity: 0;
+          transition-duration: 0.5s;
+          transition-delay: 0.2s;
+        }
+        
+        .social-icon-1-1 {
+          transition-duration: 0.4s;
+          background-color: rgb(0, 0, 0, 0);
+        }
+        
+        .socialcontainer:hover .social-icon-1 {
+          transform: translateY(-70px);
+        }
+        
+        .socialcontainer:hover .social-icon-1 svg,
+        .socialcontainer:hover .social-icon-2 svg,
+        .socialcontainer:hover .social-icon-3 svg,
+        .socialcontainer:hover .social-icon-4 svg {
+          opacity: 1;
+        }
+        
+        .social-icon-2 {
+          transition-duration: 0.4s;
+          transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+          background: linear-gradient(72.44deg, #ff7a00 11.92%, #ff0169 51.56%, #d300c5 85.69%);
+        }
+        
+        .socialcontainer:hover .social-icon-2 {
+          transform: translateY(-70px);
+        }
+        
+        .social-icon-3 {
+          transition-duration: 0.4s;
+          transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+          background: #316ff6;
+        }
+        
+        .socialcontainer:hover .social-icon-3 {
+          transform: translateY(-70px);
+        }
+        
+        .social-icon-4 {
+          transition-duration: 0.4s;
+          transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+          background: #ff0000;
+        }
+        
+        .socialcontainer:hover .social-icon-4 {
+          transform: translateY(-70px);
+        }
+
+        /* Custom Cursor */
+        .cursor-glow {
+            position: fixed;
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, rgba(176, 0, 255, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: screen;
+        }
+        
+        /* High-End Glassmorphic Contact Form */
+        .glass-form {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .glass-form::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 50%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            transition: all 0.5s ease;
+            transform: skewX(-20deg);
+        }
+
+        .glass-form:hover::before {
+            left: 150%;
+            transition: 0.8s ease;
+        }
+
+        .input-group {
+            position: relative;
+            width: 100%;
+        }
+
+        .glass-input {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 1.1rem;
+            padding: 10px 0;
+            outline: none;
+            transition: border-color 0.3s ease;
+            font-family: var(--font-body);
+        }
+
+        .glass-input:focus,
+        .glass-input:not(:placeholder-shown) {
+            border-bottom-color: #d300c5;
+        }
+
+        .glass-label {
+            position: absolute;
+            left: 0;
+            top: 10px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1.1rem;
+            pointer-events: none;
+            transition: 0.3s ease all;
+        }
+
+        .glass-input:focus ~ .glass-label,
+        .glass-input:not(:placeholder-shown) ~ .glass-label {
+            top: -20px;
+            font-size: 0.85rem;
+            color: #d300c5;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .submit-btn {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border: none;
+            border-radius: 50px;
+            padding: 1rem 3rem;
+            color: white;
+            font-size: 1.1rem;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .submit-btn:hover {
+            box-shadow: 0 0 30px rgba(176, 0, 255, 0.6);
+            transform: translateY(-2px);
+        }
+
+        /* Revolutionary Mega Footer */
+        .mega-footer {
+            position: relative;
+            background: #050505;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            overflow: hidden;
+            padding-top: 6rem;
+            color: white;
+            z-index: 5;
+        }
+
+        .footer-lights {
+            position: absolute;
+            bottom: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(ellipse at bottom, rgba(129, 34, 144, 0.2) 0%, rgba(0,0,0,0) 60%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 4rem;
+            margin-bottom: 4rem;
+            align-items: end;
+        }
+
+        .footer-brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-logo {
+            width: 100px;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.3));
+        }
+
+        .footer-contact h4, .footer-socials h4 {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-contact h4::after, .footer-socials h4::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50%;
+            height: 2px;
+            background: var(--primary);
+        }
+
+        .footer-link {
+            display: block;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            transition: 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #d300c5;
+            transform: translateX(5px);
+        }
+
+        .footer-social-link i {
+            font-size: 2.2rem;
+            color: var(--text-muted);
+            transition: all 0.3s ease;
+        }
+
+        .footer-social-link i:hover {
+            color: #ff7a00;
+            transform: scale(1.2) translateY(-5px);
+            text-shadow: 0 10px 20px rgba(255, 122, 0, 0.5);
+        }
+
+        .footer-divider {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
+            margin-bottom: 3rem;
+        }
+
+        .giant-marquee-wrapper {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+        }
+
+        .giant-text {
+            font-family: var(--font-heading);
+            font-size: clamp(40px, 16vw, 250px);
+            font-weight: 900;
+            line-height: 0.8;
+            margin: 0;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.8s cubic-bezier(0.46, -0.78, 0.5, 1.56);
+        }
+
+        .text-stroke {
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%);
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 2px rgba(211, 0, 197, 0.8);
+            filter: drop-shadow(0 0 40px rgba(211, 0, 197, 0.6));
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.46, -0.78, 0.5, 1.56);
+            pointer-events: none;
+            width: 100%;
+            text-align: center;
+        }
+
+        .giant-marquee-wrapper:hover .giant-text:not(.text-stroke) {
+            transform: scale(1.02);
+            letter-spacing: 5px;
+            opacity: 0;
+        }
+
+        .giant-marquee-wrapper:hover .text-stroke {
+            opacity: 1;
+            transform: translateX(-50%) scale(1.05);
+            letter-spacing: 15px;
+        }
+
+        .footer-legal {
+            text-align: center;
+            padding: 2rem 0;
+            color: rgba(255,255,255,0.3);
+            font-size: 0.9rem;
+            font-family: var(--font-body);
+        }
+
+
+        /* Media Queries */
+        @media (max-width: 900px) {
+            .services-grid, .promo-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .nav-links {
+                display: none;
+            }
+            .logo {
+                position: relative;
+                left: auto;
+                margin: 0 auto;
+            }
+            .navbar {
+                justify-content: center;
+                padding: 1rem;
+            }
+            .hero-btns {
+                flex-direction: column;
+                width: 100%;
+                gap: 1.5rem !important;
+                align-items: center;
+            }
+            .hero-btns > a {
+                width: 100% !important;
+                max-width: 320px;
+                box-sizing: border-box;
+                text-align: center;
+                white-space: normal;
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                max-width: 320px;
+                text-align: center;
+                box-sizing: border-box;
+            }
+            .section {
+                padding: 4rem 5%;
+            }
+            .section-header {
+                margin-bottom: 3rem;
+            }
+            .section-header h2 {
+                font-size: 2.5rem;
+            }
+            .services-content h3 {
+                font-size: 2rem;
+            }
+            .cta-section h2 {
+                font-size: 2.5rem;
+            }
+            .glass-box {
+                padding: 1.5rem;
+            }
+            .reveal-char {
+                transform: scaleX(1.05); /* slightly less wide on mobile to prevent overflow */
+                margin: 0 1px;
+            }
+            .logo-img {
+                height: 80px;
+                margin-top: -10px;
+            }
+            .hero-content h1 {
+                font-size: clamp(18px, 6vw, 90px);
+            }
+            .mobile-break {
+                flex-basis: 100% !important;
+                height: 0 !important;
+                width: 0 !important;
+            }
+            .giant-text {
+                font-size: clamp(20px, 11vw, 250px);
+            }
+            .footer-socials {
+                text-align: center !important;
+            }
+            .footer-socials > div {
+                justify-content: center !important;
+            }
+            .header {
+                padding: 1.5rem 5%;
+                background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0));
+                align-items: flex-start;
+            }
+            .hero {
+                height: max-content;
+                min-height: 100vh;
+                padding-top: 8rem;
+                padding-bottom: 4rem;
+            }
+            .hero-content {
+                padding-top: 0; 
+            }
+            .hero-content h1 {
+                font-size: clamp(32px, 11vw, 60px);
+                line-height: 1.0;
+                margin-bottom: 1rem;
+            }
+            .hero-content p {
+                font-size: 1.05rem;
+                margin-bottom: 2rem;
+                padding: 0 1rem;
+            }
+            .social-login-icons {
+                margin-top: 2rem !important;
+                gap: 5px;
+            }
+            .social-icon-1, .social-icon-1-1, .social-icon-2, .social-icon-2-2,
+            .social-icon-3, .social-icon-3-3, .social-icon-4, .social-icon-4-4 {
+                width: 40px;
+                height: 40px;
+                margin: 10px 0 0px 0;
+            }
+            .socialcontainer {
+                height: 60px;
+            }
+            .social-login-icons svg {
+                width: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <img src="../../assets/images/logo.png" alt="DreamCrop Productions Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#production">Production</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <video autoplay loop muted playsinline poster="../../assets/images/shoot_8k.png" class="hero-bg-video">
+            <source src="../../assets/images/hero_video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+            <h1 id="heroTextContainer">
+                <!-- Javascript will inject the interactive hero letters here -->
+            </h1>
+            <p style="max-width: 650px; margin: 0 auto 2.5rem auto; line-height: 1.6; text-shadow: 0 0 15px rgba(0,0,0,1);">Relive every adrenaline-pumping moment. We provide raw, cinematic cinematic event coverage in Aventura, capturing the true essence and scale of your massive events.</p>
+            <div class="hero-btns" style="align-items: center; gap: 2rem;">
+                <a href="#portfolio"
+                  style="display: inline-block; width: max-content; text-decoration: none;"
+                  class="px-10 py-3 bg-gradient-to-r from-red-500 to-orange-500 rounded-full uppercase font-serif tracking-widest relative overflow-hidden group text-transparent cursor-pointer z-10 after:absolute after:rounded-full after:bg-red-200 after:h-[85%] after:w-[95%] after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 hover:saturate-[1.15] active:saturate-[1.4]"
+                >
+                  WATCH OUR REEL
+                  <p
+                    class="absolute z-40 font-bold text-white top-1/2 left-1/2 -translate-x-1/2 group-hover:-translate-y-[150%] h-full w-full transition-all duration-300 -translate-y-[50%] tracking-widest text-center whitespace-nowrap text-sm sm:text-base"
+                    style="display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); letter-spacing: 2px;"
+                  >
+                    WATCH OUR REEL
+                  </p>
+                  <p
+                    class="absolute z-40 top-1/2 left-1/2 font-extrabold text-white -translate-x-1/2 translate-y-full h-full w-full transition-all duration-300 group-hover:-translate-y-[50%] tracking-widest text-center whitespace-nowrap text-sm sm:text-base"
+                    style="display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); letter-spacing: 2px;"
+                  >
+                    PLAY VIDEO
+                  </p>
+                  <svg
+                    class="absolute w-full h-full scale-x-125 rotate-180 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 group-hover:animate-none animate-pulse group-hover:-translate-y-[45%] transition-all duration-300"
+                    viewBox="0 0 2400 800"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <linearGradient id="sssurf-grad" y2="100%" x2="50%" y1="0%" x1="50%">
+                        <stop
+                          offset="0%"
+                          stop-opacity="1"
+                          stop-color="hsl(37, 99%, 67%)"
+                        ></stop>
+                        <stop
+                          offset="100%"
+                          stop-opacity="1"
+                          stop-color="hsl(316, 73%, 52%)"
+                        ></stop>
+                      </linearGradient>
+                    </defs>
+                    <g transform="matrix(1,0,0,1,0,-91.0877685546875)" fill="url(#sssurf-grad)">
+                      <path
+                        opacity="0.05"
+                        transform="matrix(1,0,0,1,0,35)"
+                        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+                      ></path>
+                      <path
+                        opacity="0.21"
+                        transform="matrix(1,0,0,1,0,70)"
+                        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+                      ></path>
+                      <path
+                        opacity="0.37"
+                        transform="matrix(1,0,0,1,0,105)"
+                        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+                      ></path>
+                      <path
+                        opacity="0.53"
+                        transform="matrix(1,0,0,1,0,140)"
+                        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+                      ></path>
+                      <path
+                        opacity="0.68"
+                        transform="matrix(1,0,0,1,0,175)"
+                        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+                      ></path>
+                      <path
+                        opacity="0.84"
+                        transform="matrix(1,0,0,1,0,210)"
+                        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+                      ></path>
+                      <path
+                        opacity="1"
+                        transform="matrix(1,0,0,1,0,245)"
+                        d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <svg
+                    class="absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-[30%] group-hover:-translate-y-[33%] group-hover:scale-95 transition-all duration-500 z-40 fill-red-500"
+                    viewBox="0 0 1440 320"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0,288L9.2,250.7C18.5,213,37,139,55,133.3C73.8,128,92,192,111,224C129.2,256,148,256,166,256C184.6,256,203,256,222,250.7C240,245,258,235,277,213.3C295.4,192,314,160,332,170.7C350.8,181,369,235,388,229.3C406.2,224,425,160,443,122.7C461.5,85,480,75,498,74.7C516.9,75,535,85,554,101.3C572.3,117,591,139,609,170.7C627.7,203,646,245,665,256C683.1,267,702,245,720,245.3C738.5,245,757,267,775,266.7C793.8,267,812,245,831,234.7C849.2,224,868,224,886,218.7C904.6,213,923,203,942,170.7C960,139,978,85,997,53.3C1015.4,21,1034,11,1052,48C1070.8,85,1089,171,1108,197.3C1126.2,224,1145,192,1163,197.3C1181.5,203,1200,245,1218,224C1236.9,203,1255,117,1274,106.7C1292.3,96,1311,160,1329,170.7C1347.7,181,1366,139,1385,128C1403.1,117,1422,139,1431,149.3L1440,160L1440,320L1430.8,320C1421.5,320,1403,320,1385,320C1366.2,320,1348,320,1329,320C1310.8,320,1292,320,1274,320C1255.4,320,1237,320,1218,320C1200,320,1182,320,1163,320C1144.6,320,1126,320,1108,320C1089.2,320,1071,320,1052,320C1033.8,320,1015,320,997,320C978.5,320,960,320,942,320C923.1,320,905,320,886,320C867.7,320,849,320,831,320C812.3,320,794,320,775,320C756.9,320,738,320,720,320C701.5,320,683,320,665,320C646.2,320,628,320,609,320C590.8,320,572,320,554,320C535.4,320,517,320,498,320C480,320,462,320,443,320C424.6,320,406,320,388,320C369.2,320,351,320,332,320C313.8,320,295,320,277,320C258.5,320,240,320,222,320C203.1,320,185,320,166,320C147.7,320,129,320,111,320C92.3,320,74,320,55,320C36.9,320,18,320,9,320L0,320Z"
+                      fill-opacity="1"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#contact" class="btn btn-outline" style="z-index: 10;">Book a Shoot</a>
+                
+                <!-- Glowing Click-to-Call Phone Number -->
+                <a href="tel:7864476252" class="px-6 py-3 rounded-full border border-purple-500/50 bg-black/40 backdrop-blur-md text-white font-serif tracking-widest text-sm hover:bg-purple-900/40 hover:border-purple-400 transition-all duration-300" style="z-index: 10; display: flex; align-items: center; gap: 10px; box-shadow: 0 0 20px rgba(176,0,255,0.2);">
+                    <i class='bx bxs-phone' style="font-size: 1.2rem; color: #d300c5;"></i> (786) 447-6252
+                </a>
+            </div>
+            
+            <!-- Uiverse Social Icons -->
+            <div class="social-login-icons" data-aos="fade-up" data-aos-delay="400" style="justify-content: center; margin-top: 3.5rem; z-index: 10; padding-bottom: 2rem;">
+              <a href="https://www.instagram.com/dreamcropproductions?igsh=MWl6dHRwemN1N29reA%3D%3D&utm_source=qr" target="_blank" class="socialcontainer"><div class="icon social-icon-2-2"><svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></div><div class="social-icon-2"><svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></div></a>
+              <a href="https://www.facebook.com/profile.php?id=61574268835702" target="_blank" class="socialcontainer"><div class="icon social-icon-3-3"><svg viewBox="0 0 384 512" fill="white" height="1.6em" xmlns="http://www.w3.org/2000/svg"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"></path></svg></div><div class="social-icon-3"><svg viewBox="0 0 384 512" fill="white" height="1.6em" xmlns="http://www.w3.org/2000/svg"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"></path></svg></div></a>
+              <a href="https://youtube.com/@dreamcropproductions4517?si=wsiaHbnaygJ_puqG" target="_blank" class="socialcontainer"><div class="icon social-icon-4-4"><svg fill="white" viewBox="0 0 576 512" height="1.6em" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></div><div class="social-icon-4"><svg fill="white" viewBox="0 0 576 512" height="1.6em" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></div></a>
+            </div>
+            <!-- End Uiverse Social Icons -->
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section class="section" id="services">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Elite Aventura Cinematic Event Coverage</h2>
+            <p>Transforming raw footage into unforgettable, high-conversion visual gold for top-tier brands.</p>
+        </div>
+        <div class="services-grid">
+            <div class="services-content" data-aos="fade-right" data-aos-delay="200">
+                <h3 style="margin-bottom: 20px;">Built for the Bold. Engineered for Results.</h3>
+                <p style="margin-bottom: 20px; line-height: 1.8;">We don't just cut clips together; we orchestrate high-end cinematic experiences. As Aventura's premier cinematic event coverage house, we specialize in taking visionary concepts and elevating them through meticulous storytelling, aggressive 3D sound design, and industry-leading visual effects. If you want your audience completely hooked in the first three seconds, you're exactly where you need to be.</p>
+                <p style="margin-bottom: 25px; line-height: 1.8;">Our post-production workflow is heavily optimized for global advertising agencies, enterprise corporate brands, and ambitious local businesses alike, guaranteeing premium deliverables precisely on deadline. We demand perfection on every single frame.</p>
+                <ul class="feature-list">
+                    <li><i class='bx bx-check-circle'></i> High-Octane Commercial Promos</li>
+                    <li><i class='bx bx-check-circle'></i> Industry-Level Color Grading (DaVinci Resolve)</li>
+                    <li><i class='bx bx-check-circle'></i> Immersive 3D Sound & Audio Mixing</li>
+                    <li><i class='bx bx-check-circle'></i> Next-Gen VFX, Tracking & Motion Graphics</li>
+                </ul>
+                <br>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="image-card" data-aos="zoom-in" data-aos-delay="400">
+                <img src="../../assets/images/editing_8k.png" alt="High-end cinematic event coverage editing setup in Aventura FL">
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo / About -->
+    <section class="section promo-section" id="production">
+        <div class="promo-grid">
+            <div class="image-card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="../../assets/images/shoot_8k.png" alt="High-end 8k commercial video shoot on set with crew in Aventura FL">
+            </div>
+            <div class="glass-box" data-aos="fade-left" data-aos-delay="400">
+                <h3 style="margin-bottom: 20px;">Aventura's Finest Commercial Production Quality</h3>
+                <p style="margin-bottom: 20px; line-height: 1.8;">Whether you are launching massive multi-platform advertising campaigns for global enterprises or engineering hyper-targeted cinematic brand promotions, DreamCrop Productions provides the elite crew, the state-of-the-art camera systems (RED, ARRI, Sony Cinema Line), and the exact stylistic execution you need to brutally dominate your market. We fully manage the entire production pipeline locally in Miami-Dade County—from gritty location scouting to high-budget studio sets.</p>
+                <p style="margin-bottom: 25px; line-height: 1.8;">Our ultra-realistic, obsessive approach to cinema-grade lighting, bespoke set design, and aggressive technical direction ensures your brand is perceived as pure, undisputed luxury. In today's visual-first economy, you only get one chance to make a first impression. We make sure you never miss.</p>
+                <p style="color: #d300c5; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Ready to elevate your visual identity? Scroll down to book your production session now.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery & Anim -->
+    <section class="section" id="portfolio">
+        <div class="section-header" data-aos="fade-up" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+            <h2>Bring Your Vision to Life.</h2>
+            <p style="max-width: 700px; line-height: 1.8;">Don't settle for average. At DreamCrop Productions, we turn bold ideas into high-end, cinematic realities that captivate audiences instantly. Whether it's a slick commercial, a dynamic promo, or cutting-edge VFX, our team delivers absolute top-tier quality every single time.</p>
+            <p style="color: #d300c5; margin-top: 1.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; font-size: 1rem;">Tap below to reserve your production shoot today</p>
+        </div>
+        
+        <!-- Native Vanilla RevealText Effect -->
+        <a href="#contact" class="reveal-container" style="text-decoration: none;" data-aos="fade-up">
+            <div class="reveal-text" id="revealTextContainer">
+                <!-- Javascript will dynamically inject the characters here -->
+            </div>
+        </a>
+
+    </section>
+
+    <!-- Call to Action & Contact Form -->
+    <section class="cta-section" id="contact" style="padding-top: 8rem; padding-bottom: 8rem; background: linear-gradient(180deg, #0f0f13 0%, #000000 100%); position: relative; overflow: hidden;">
+        <!-- Glowing background light -->
+        <div style="position: absolute; top: 10%; left: 50%; transform: translateX(-50%); width: 800px; height: 800px; background: radial-gradient(circle, rgba(129, 34, 144, 0.15) 0%, transparent 60%); z-index: 1; border-radius: 50%;"></div>
+        
+        <div style="position: relative; z-index: 10; max-width: 800px; margin: 0 auto; text-align: center;" data-aos="fade-up">
+            <h2 style="font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 1rem; text-transform: uppercase;">Let's Create Magic.</h2>
+            <p style="color: var(--text-muted); font-size: 1.2rem; margin-bottom: 4rem;">Drop us a line and let's craft something no one will ever forget.</p>
+            
+            <!-- Integrated CRM Form -->
+            <div class="glass-form" data-aos="zoom-in" data-aos-delay="200" style="padding: 1rem; border-radius: 20px;">
+                <iframe
+                    src="https://api.leadconnectorhq.com/widget/form/2GPLfd5qqw6AuDpAcFQN"
+                    style="width:100%;height:100%;border:none;border-radius:3px"
+                    id="inline-2GPLfd5qqw6AuDpAcFQN" 
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="Form 1"
+                    data-height="725"
+                    data-layout-iframe-id="inline-2GPLfd5qqw6AuDpAcFQN"
+                    data-form-id="2GPLfd5qqw6AuDpAcFQN"
+                    title="Form 1"
+                >
+                </iframe>
+                <script src="https://api.leadconnectorhq.com/js/form_embed.js"></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revolutionary Mega Footer -->
+    <footer class="mega-footer">
+        <div class="footer-lights"></div>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-contact" data-aos="fade-right">
+                    <h4>Direct Line</h4>
+                    <a href="tel:7864476252" class="footer-link"><i class='bx bxs-phone' style="color: #d300c5; margin-right: 8px;"></i> (786) 447-6252</a>
+                    <a href="mailto:Info@dreamcropproductions.com" class="footer-link"><i class='bx bx-envelope' style="color: #d300c5; margin-right: 8px;"></i> Info@dreamcropproductions.com</a>
+                </div>
+                <div class="footer-brand" data-aos="fade-up" data-aos-delay="200">
+                    <img src="../../assets/images/logo.png" alt="DreamCrop Productions" class="footer-logo">
+                    <p style="color: var(--text-muted); font-size: 1.1rem; letter-spacing: 1px;">Aventura's Premier Cinematic Event Coverage Agency.</p>
+                </div>
+                <div class="footer-socials" data-aos="fade-left" style="text-align: right;">
+                    <h4>Connect</h4>
+                    <div style="display: flex; gap: 1.5rem; justify-content: flex-end;">
+                        <a href="https://www.instagram.com/dreamcropproductions?igsh=MWl6dHRwemN1N29reA%3D%3D&utm_source=qr" target="_blank" class="footer-social-link"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://youtube.com/@dreamcropproductions4517?si=wsiaHbnaygJ_puqG" target="_blank" class="footer-social-link"><i class='bx bxl-youtube'></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61574268835702" target="_blank" class="footer-social-link"><i class='bx bxl-facebook'></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <div class="giant-marquee-wrapper group" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="0">
+                    <h1 class="giant-text">DREAMCROP</h1>
+                    <h1 class="giant-text text-stroke">DREAMCROP</h1>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 DreamCrop Productions Aventura. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Init AOS Animations
+        AOS.init({
+            once: false,
+            mirror: true,
+            offset: 100,
+            duration: 900,
+            easing: 'ease-out-back',
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Glow Cursor Effect
+        const cursorGlow = document.createElement('div');
+        cursorGlow.classList.add('cursor-glow');
+        document.body.appendChild(cursorGlow);
+
+        document.addEventListener('mousemove', (e) => {
+            requestAnimationFrame(() => {
+                cursorGlow.style.left = e.clientX + 'px';
+                cursorGlow.style.top = e.clientY + 'px';
+            });
+        });
+
+        // ==========================================
+        // RevealText Logic Recreated in Vanilla JS
+        // ==========================================
+        const images = [
+            "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+            "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+            "https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+            "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+            "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+            "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        ];
+
+        function createRevealText(containerId, textToReveal) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+
+            // Replace pipe | with a space that breaks on mobile
+            // First we do standard new lines
+            let charIndex = 0;
+            const lines = textToReveal.split('\n');
+
+            lines.forEach((line, lineIndex) => {
+                // Split by spaces to form words so they don't break mid-letter!
+                const words = line.split(' ');
+
+                words.forEach((word, wordIndex) => {
+                    let wordContainer = document.createElement('div');
+                    wordContainer.style.display = 'flex';
+                    wordContainer.classList.add('reveal-word');
+
+                    word.split('').forEach(char => {
+                        if (char === '|') {
+                            const br = document.createElement('div');
+                            br.classList.add('mobile-break');
+                            container.appendChild(wordContainer); // End current word
+                            container.appendChild(br);
+                            
+                            // Reinitialize a fresh container for the remainder of this word!
+                            wordContainer = document.createElement('div');
+                            wordContainer.style.display = 'flex';
+                            wordContainer.classList.add('reveal-word');
+                            return; // Skip normal char rendering
+                        }
+
+                        const charDiv = document.createElement('div');
+                        charDiv.classList.add('reveal-char');
+
+                        const baseSpan = document.createElement('span');
+                        baseSpan.classList.add('reveal-char-base');
+                        baseSpan.innerText = char;
+
+                        const imgSpan = document.createElement('span');
+                        imgSpan.classList.add('reveal-char-img');
+                        imgSpan.innerText = char;
+                        imgSpan.style.backgroundImage = `url('${images[charIndex % images.length]}')`;
+
+                        charDiv.appendChild(baseSpan);
+                        charDiv.appendChild(imgSpan);
+                        wordContainer.appendChild(charDiv);
+
+                        charIndex++;
+                    });
+
+                    // Append the word container safely (it might have been appended early if a pipe was encountered, but appending again just moves it natively)
+                    if (wordContainer.childNodes.length > 0) {
+                        container.appendChild(wordContainer);
+                    }
+
+                    if (wordIndex < words.length - 1) {
+                        const space = document.createElement('div');
+                        space.style.width = '0.3em';
+                        container.appendChild(space);
+                    }
+                });
+
+                if (lineIndex < lines.length - 1) {
+                    const br = document.createElement('div');
+                    br.style.flexBasis = '100%';
+                    br.style.height = '0';
+                    container.appendChild(br);
+                }
+            });
+        }
+
+        // Apply dynamic image hover effects to both the massive button and the main hero!
+        createRevealText('revealTextContainer', 'BOOK NOW');
+        createRevealText('heroTextContainer', `IMMORTALIZE THE\nEXPERIENCE.`);
+
+        // ==========================================
+        // Auto sweeping animation wave
+        // ==========================================
+        setTimeout(() => {
+            const allChars = document.querySelectorAll('.reveal-char');
+            let currentIndex = 0;
+
+            if (allChars.length > 0) {
+                setInterval(() => {
+                    // Remove active state from previous character
+                    const prevIndex = (currentIndex - 1 + allChars.length) % allChars.length;
+                    allChars[prevIndex].classList.remove('active');
+                    
+                    // Add active state to current character
+                    allChars[currentIndex].classList.add('active');
+                    
+                    // Move to next
+                    currentIndex = (currentIndex + 1) % allChars.length;
+                }, 180); // 180ms delay per letter creates a beautiful overlapping wave
+            }
+        }, 1500); // Start after initial entrance animations finish
+    </script>
+</body>
+</html>
