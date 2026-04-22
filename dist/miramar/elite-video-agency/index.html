@@ -7,6 +7,19 @@
     <meta name="description" content="DreamCrop Productions is Miramar's top-rated elite video agency. We specialize in high-end cinematic commercials, corporate videos, event videography, and cutting-edge post-production. Elevate your brand in Broward County. Book a shoot today!">
     <meta name="keywords" content="Miramar elite video agency, video agency Miramar, commercial videographer Miramar, high-end production company FL, cinematic video editing Miramar, corporate video production Miramar, DreamCrop Productions, hire videographer in Miramar">
 
+    <!-- Open Graph for Social DOM & Semantic Crawlers -->
+    <meta property="og:title" content="DreamCrop Productions | Premier Elite Video Agency in Miramar, FL">
+    <meta property="og:description" content="Miramar's top-rated elite video agency specializing in high-end cinematic commercials, corporate videos, and cutting-edge post-production.">
+    <meta property="og:image" content="https://www.dreamcropproductions.com/assets/images/shoot_8k.png">
+    <meta property="og:url" content="https://www.dreamcropproductions.com/miramar/elite-video-agency/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards for Maximum Social Graph Coverage -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DreamCrop Productions | Elite Video Agency">
+    <meta name="twitter:description" content="Elevate your brand with Miramar's absolute top-tier cinematic production and editing agency.">
+    <meta name="twitter:image" content="https://www.dreamcropproductions.com/assets/images/shoot_8k.png">
+
     <!-- Canonical URL for SEO Indexing -->
     <link rel="canonical" href="https://www.dreamcropproductions.com/miramar/elite-video-agency/" />
     <!-- Global Sitemap Reference -->
@@ -18,57 +31,80 @@
     <meta name="geo.position" content="25.9873;-80.3323" />
     <meta name="ICBM" content="25.9873, -80.3323" />
 
-    <!-- Dominant JSON-LD Structured Data for Local Ranking & Review Stars -->
+    <!-- Dominant JSON-LD Structured Data for Local Ranking, Organization, & Video Graph -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "DreamCrop Productions",
-      "image": "https://www.dreamcropproductions.com/assets/images/logo.png",
-      "@id": "https://www.dreamcropproductions.com",
-      "url": "https://www.dreamcropproductions.com",
-      "telephone": "+17864476252",
-      "email": "Info@dreamcropproductions.com",
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Downtown Miramar",
-        "addressLocality": "Miramar",
-        "addressRegion": "FL",
-        "postalCode": "33027",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 25.9873,
-        "longitude": -80.3323
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "08:00",
-        "closes": "20:00"
-      },
-      "sameAs": [
-        "https://www.instagram.com/dreamcropproductions?igsh=MWl6dHRwemN1N29reA%3D%3D&utm_source=qr",
-        "https://www.facebook.com/profile.php?id=61574268835702",
-        "https://youtube.com/@dreamcropproductions4517?si=wsiaHbnaygJ_puqG"
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "142"
-      },
-      "description": "Miramar's premier elite video agency specializing in cinematic commercials, corporate videos, and high-end editing services."
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.dreamcropproductions.com/#organization",
+          "name": "DreamCrop Productions",
+          "url": "https://www.dreamcropproductions.com",
+          "logo": "https://www.dreamcropproductions.com/assets/images/logo.png",
+          "sameAs": [
+            "https://www.instagram.com/dreamcropproductions?igsh=MWl6dHRwemN1N29reA%3D%3D&utm_source=qr",
+            "https://www.facebook.com/profile.php?id=61574268835702",
+            "https://youtube.com/@dreamcropproductions4517?si=wsiaHbnaygJ_puqG"
+          ]
+        },
+        {
+          "@type": ["ProfessionalService", "LocalBusiness", "VideoGallery"],
+          "@id": "https://www.dreamcropproductions.com/miramar/elite-video-agency/#localbusiness",
+          "name": "DreamCrop Productions",
+          "image": "https://www.dreamcropproductions.com/assets/images/shoot_8k.png",
+          "url": "https://www.dreamcropproductions.com/miramar/elite-video-agency/",
+          "telephone": "+17864476252",
+          "email": "Info@dreamcropproductions.com",
+          "priceRange": "$$$",
+          "description": "Miramar's premier elite video agency specializing in cinematic commercials, corporate videos, and high-end editing services.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Downtown Miramar",
+            "addressLocality": "Miramar",
+            "addressRegion": "FL",
+            "postalCode": "33027",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 25.9873,
+            "longitude": -80.3323
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "08:00",
+            "closes": "20:00"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "142"
+          }
+        },
+        {
+          "@type": "VideoObject",
+          "@id": "https://www.dreamcropproductions.com/miramar/elite-video-agency/#heroVideo",
+          "name": "DreamCrop Productions Cinematic Reel",
+          "description": "High-end commercial video production and cinematography reel by DreamCrop Productions located in Miramar, FL.",
+          "thumbnailUrl": "https://www.dreamcropproductions.com/assets/images/shoot_8k.png",
+          "uploadDate": "2024-01-01T08:00:00+08:00",
+          "contentUrl": "https://www.dreamcropproductions.com/assets/images/hero_video.mp4",
+          "embedUrl": "https://www.dreamcropproductions.com/miramar/elite-video-agency/"
+        }
+      ]
     }
     </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../../assets/images/logo.png">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts & DNS Prefetching -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Boxicons -->
@@ -1081,6 +1117,9 @@
         </ul>
     </nav>
 
+    <!-- Main Content for SEO Mapping -->
+    <main>
+
     <!-- Hero Section -->
     <header class="hero" id="home">
         <video autoplay loop muted playsinline poster="../../assets/images/shoot_8k.png" class="hero-bg-video">
@@ -1289,6 +1328,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Revolutionary Mega Footer -->
     <footer class="mega-footer">

@@ -7,6 +7,19 @@
     <meta name="description" content="DreamCrop Productions is {{CITY}}'s top-rated {{SERVICE_LOWER}}. We specialize in high-end cinematic commercials, corporate videos, event videography, and cutting-edge post-production. Elevate your brand in {{REGION}}. Book a shoot today!">
     <meta name="keywords" content="{{CITY}} {{SERVICE_LOWER}}, video agency {{CITY}}, commercial videographer {{CITY}}, high-end production company {{STATE}}, cinematic video editing {{CITY}}, corporate video production {{CITY}}, DreamCrop Productions, hire videographer in {{CITY}}">
 
+    <!-- Open Graph for Social DOM & Semantic Crawlers -->
+    <meta property="og:title" content="DreamCrop Productions | Premier {{SERVICE_CAPS}} in {{CITY}}, {{STATE}}">
+    <meta property="og:description" content="{{CITY}}'s top-rated {{SERVICE_LOWER}} specializing in high-end cinematic commercials, corporate videos, and cutting-edge post-production.">
+    <meta property="og:image" content="https://www.dreamcropproductions.com/assets/images/shoot_8k.png">
+    <meta property="og:url" content="{{CANONICAL_URL}}">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards for Maximum Social Graph Coverage -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DreamCrop Productions | {{SERVICE_CAPS}}">
+    <meta name="twitter:description" content="Elevate your brand with {{CITY}}'s absolute top-tier cinematic production and editing agency.">
+    <meta name="twitter:image" content="https://www.dreamcropproductions.com/assets/images/shoot_8k.png">
+
     <!-- Canonical URL for SEO Indexing -->
     <link rel="canonical" href="{{CANONICAL_URL}}" />
     <!-- Global Sitemap Reference -->
@@ -18,57 +31,80 @@
     <meta name="geo.position" content="{{LATITUDE}};{{LONGITUDE}}" />
     <meta name="ICBM" content="{{LATITUDE}}, {{LONGITUDE}}" />
 
-    <!-- Dominant JSON-LD Structured Data for Local Ranking & Review Stars -->
+    <!-- Dominant JSON-LD Structured Data for Local Ranking, Organization, & Video Graph -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "DreamCrop Productions",
-      "image": "https://www.dreamcropproductions.com/assets/images/logo.png",
-      "@id": "https://www.dreamcropproductions.com",
-      "url": "https://www.dreamcropproductions.com",
-      "telephone": "+17864476252",
-      "email": "Info@dreamcropproductions.com",
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Downtown {{CITY}}",
-        "addressLocality": "{{CITY}}",
-        "addressRegion": "{{STATE}}",
-        "postalCode": "{{ZIPCODE}}",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": {{LATITUDE}},
-        "longitude": {{LONGITUDE}}
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "08:00",
-        "closes": "20:00"
-      },
-      "sameAs": [
-        "https://www.instagram.com/dreamcropproductions?igsh=MWl6dHRwemN1N29reA%3D%3D&utm_source=qr",
-        "https://www.facebook.com/profile.php?id=61574268835702",
-        "https://youtube.com/@dreamcropproductions4517?si=wsiaHbnaygJ_puqG"
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "142"
-      },
-      "description": "{{CITY}}'s premier {{SERVICE_LOWER}} specializing in cinematic commercials, corporate videos, and high-end editing services."
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.dreamcropproductions.com/#organization",
+          "name": "DreamCrop Productions",
+          "url": "https://www.dreamcropproductions.com",
+          "logo": "https://www.dreamcropproductions.com/assets/images/logo.png",
+          "sameAs": [
+            "https://www.instagram.com/dreamcropproductions?igsh=MWl6dHRwemN1N29reA%3D%3D&utm_source=qr",
+            "https://www.facebook.com/profile.php?id=61574268835702",
+            "https://youtube.com/@dreamcropproductions4517?si=wsiaHbnaygJ_puqG"
+          ]
+        },
+        {
+          "@type": ["ProfessionalService", "LocalBusiness", "VideoGallery"],
+          "@id": "{{CANONICAL_URL}}#localbusiness",
+          "name": "DreamCrop Productions",
+          "image": "https://www.dreamcropproductions.com/assets/images/shoot_8k.png",
+          "url": "{{CANONICAL_URL}}",
+          "telephone": "+17864476252",
+          "email": "Info@dreamcropproductions.com",
+          "priceRange": "$$$",
+          "description": "{{CITY}}'s premier {{SERVICE_LOWER}} specializing in cinematic commercials, corporate videos, and high-end editing services.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Downtown {{CITY}}",
+            "addressLocality": "{{CITY}}",
+            "addressRegion": "{{STATE}}",
+            "postalCode": "{{ZIPCODE}}",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": {{LATITUDE}},
+            "longitude": {{LONGITUDE}}
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "08:00",
+            "closes": "20:00"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "142"
+          }
+        },
+        {
+          "@type": "VideoObject",
+          "@id": "{{CANONICAL_URL}}#heroVideo",
+          "name": "DreamCrop Productions Cinematic Reel",
+          "description": "High-end commercial video production and cinematography reel by DreamCrop Productions located in {{CITY}}, {{STATE}}.",
+          "thumbnailUrl": "https://www.dreamcropproductions.com/assets/images/shoot_8k.png",
+          "uploadDate": "2024-01-01T08:00:00+08:00",
+          "contentUrl": "https://www.dreamcropproductions.com/assets/images/hero_video.mp4",
+          "embedUrl": "{{CANONICAL_URL}}"
+        }
+      ]
     }
     </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{BASE_URL}}/assets/images/logo.png">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts & DNS Prefetching -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Boxicons -->
@@ -1081,6 +1117,9 @@
         </ul>
     </nav>
 
+    <!-- Main Content for SEO Mapping -->
+    <main>
+
     <!-- Hero Section -->
     <header class="hero" id="home">
         <video autoplay loop muted playsinline poster="{{BASE_URL}}/assets/images/shoot_8k.png" class="hero-bg-video">
@@ -1289,6 +1328,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Revolutionary Mega Footer -->
     <footer class="mega-footer">
