@@ -20,8 +20,14 @@ const srcAssets = path.join(__dirname, 'assets');
 const distAssets = path.join(distPath, 'assets');
 fs.cpSync(srcAssets, distAssets, { recursive: true });
 
-// Copy the original index.html over as the root page so the base website still works!
+// Copy the original index.html and other static pages over as the root page so the base website still works!
 fs.copyFileSync(path.join(__dirname, 'index.html'), path.join(distPath, 'index.html'));
+if (fs.existsSync(path.join(__dirname, 'privacy-policy.html'))) {
+    fs.copyFileSync(path.join(__dirname, 'privacy-policy.html'), path.join(distPath, 'privacy-policy.html'));
+}
+if (fs.existsSync(path.join(__dirname, 'terms-and-conditions.html'))) {
+    fs.copyFileSync(path.join(__dirname, 'terms-and-conditions.html'), path.join(distPath, 'terms-and-conditions.html'));
+}
 
 if (fs.existsSync(path.join(__dirname, 'CNAME'))) {
     fs.copyFileSync(path.join(__dirname, 'CNAME'), path.join(distPath, 'CNAME'));
